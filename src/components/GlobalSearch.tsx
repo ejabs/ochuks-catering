@@ -1,9 +1,8 @@
-
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Search } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Search } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 interface GlobalSearchProps {
   onSearch?: (searchTerm: string) => void;
@@ -11,12 +10,12 @@ interface GlobalSearchProps {
   className?: string;
 }
 
-export const GlobalSearch: React.FC<GlobalSearchProps> = ({ 
-  onSearch, 
-  placeholder = "Search products...", 
-  className = "" 
+export const GlobalSearch: React.FC<GlobalSearchProps> = ({
+  onSearch,
+  placeholder = "Search products...",
+  className = "",
 }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
   const handleSearch = (e: React.FormEvent) => {
@@ -40,10 +39,10 @@ export const GlobalSearch: React.FC<GlobalSearchProps> = ({
           onChange={(e) => setSearchTerm(e.target.value)}
           className="pl-10 pr-20"
         />
-        <Button 
+        <Button
           type="submit"
           size="sm"
-          className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-orange-600 hover:bg-orange-700"
+          className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600"
         >
           Search
         </Button>

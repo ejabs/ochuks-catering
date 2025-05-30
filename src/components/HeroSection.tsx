@@ -64,11 +64,8 @@ export const HeroSection = () => {
             <div className="space-y-6 animate-fade-in-up">
               <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight font-playfair drop-shadow-lg">
                 Delicious
-                <span className="text-orange-400 animate-pulse">
-                  {" "}
-                  Pastries
-                </span>{" "}
-                &<span className="text-orange-400 animate-pulse"> Cakes</span>
+                <span className="text-blue-500 animate-pulse"> Pastries</span> &
+                <span className="text-blue-500 animate-pulse"> Cakes</span>
               </h1>
               <p className="text-xl text-gray-100 leading-relaxed drop-shadow-md">
                 From artisanal pastries to custom cakes and full-service
@@ -91,7 +88,7 @@ export const HeroSection = () => {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-orange-600 hover:bg-orange-700 hover:scale-105 transition-all duration-300 font-playfair"
+                  className=" bg-blue-500 hover:bg-blue-700 hover:scale-105 transition-all duration-300 font-playfair "
                 >
                   <Link to="/products">Shop Now</Link>
                 </Button>
@@ -99,7 +96,7 @@ export const HeroSection = () => {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="border-white text-gray-700  hover:bg-transparent hover:text-orange-600 hover:scale-105 transition-all duration-300 font-playfair"
+                  className="border-white text-gray-700  hover:bg-transparent hover:text-blue-600 hover:scale-105 transition-all duration-300 font-playfair"
                 >
                   <Link to="/catering">Catering Services</Link>
                 </Button>

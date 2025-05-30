@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-orange-400">
+            <h3 className="text-2xl font-bold mb-4 text-blue-500">
               Ochuks Catering
             </h3>
             <p className="text-gray-300 mb-4">
@@ -120,7 +120,7 @@ export const Footer = () => {
                 placeholder="Your email"
                 className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white placeholder-gray-400 focus:outline-none focus:border-orange-400"
               />
-              <button className="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-md transition-colors">
+              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition-colors">
                 Subscribe
               </button>
             </div>

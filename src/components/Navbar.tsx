@@ -16,7 +16,7 @@ export const Navbar = () => {
             to="/"
             className="flex items-center space-x-2 hover:scale-105 transition-transform duration-200"
           >
-            <div className="text-2xl font-bold text-orange-600">
+            <div className="text-2xl font-bold text-blue-600">
               Ochuks Catering
             </div>
             <span className="text-sm text-gray-600">Services</span>

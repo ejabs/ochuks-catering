@@ -75,7 +75,7 @@ export const FeaturedProducts = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === featuredProducts.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [featuredProducts.length]);
@@ -134,7 +134,7 @@ export const FeaturedProducts = () => {
                             className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                           />
                           <div className="absolute top-2 right-2">
-                            <span className="bg-orange-600 text-white px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
+                            <span className="bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold animate-pulse">
                               {product.category}
                             </span>
                           </div>
@@ -151,12 +151,12 @@ export const FeaturedProducts = () => {
                           {product.description}
                         </p>
                         <div className="flex items-center justify-between">
-                          <span className="text-2xl font-bold text-orange-600">
+                          <span className="text-xl font-bold text-red-400">
                             ₦{product.price.toLocaleString()}
                           </span>
                           <Button
                             onClick={() => addToCart(product)}
-                            className="bg-orange-600 hover:bg-orange-700 hover:scale-105 transition-all duration-300 font-playfair"
+                            className="bg-blue-500 hover:bg-blue-600 hover:scale-105 transition-all duration-300 font-playfair"
                           >
                             Add to Cart
                           </Button>
@@ -203,7 +203,7 @@ export const FeaturedProducts = () => {
           <Button
             asChild
             size="lg"
-            className="bg-orange-600 hover:bg-orange-700 hover:scale-105 transition-all duration-300 font-playfair"
+            className="bg-blue-500 hover:bg-blue-600 hover:scale-105 transition-all duration-300 font-playfair"
           >
             <Link to="/products">View All Products</Link>
           </Button>

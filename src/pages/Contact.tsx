@@ -120,7 +120,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-orange-600 hover:bg-orange-700"
+                  className="w-sm bg-blue-500 hover:bg-blue-600"
                   size="lg"
                 >
                   Send Message
@@ -202,7 +202,7 @@ const Contact = () => {
                 </p>
                 <div className="space-y-3">
                   <Input type="email" placeholder="Your email address" />
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700">
+                  <Button className="w-sm bg-blue-500 hover:bg-blue-600">
                     Subscribe
                   </Button>
                 </div>

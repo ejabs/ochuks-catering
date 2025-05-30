@@ -50,7 +50,7 @@ export const CartDrawer = () => {
         >
           <ShoppingCart className="h-5 w-5 group-hover:animate-bounce" />
           {cartItemsCount > 0 && (
-            <span className="absolute -top-2 -right-2 bg-orange-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center animate-pulse">
+            <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center animate-pulse">
               {cartItemsCount}
             </span>
           )}
@@ -79,7 +79,7 @@ export const CartDrawer = () => {
                 </p>
                 <Button
                   asChild
-                  className="bg-orange-600 hover:bg-orange-700 hover:scale-105 transition-all duration-300"
+                  className="bg-blue-500 hover:bg-blue-600 hover:scale-105 transition-all duration-300"
                 >
                   <Link to="/products">Shop Now</Link>
                 </Button>
@@ -104,7 +104,7 @@ export const CartDrawer = () => {
                         <h4 className="font-semibold text-gray-900 text-sm font-playfair">
                           {item.name}
                         </h4>
-                        <p className="text-orange-600 font-bold">
+                        <p className="text-black text-sm">
                           ₦{item.price.toFixed(2)}
                         </p>
                         <div className="flex items-center space-x-2 mt-2">
@@ -134,7 +134,7 @@ export const CartDrawer = () => {
                         </div>
                       </div>
                       <div className="text-right">
-                        <p className="font-bold text-gray-900">
+                        <p className="font-bold text-gray-900 text-sm">
                           ₦{(item.price * item.quantity).toFixed(2)}
                         </p>
                         <Button
@@ -184,7 +184,7 @@ export const CartDrawer = () => {
                   <Button
                     asChild
                     size="lg"
-                    className="w-full bg-orange-600 hover:bg-orange-700 hover:scale-105 transition-all duration-300 font-playfair"
+                    className="w-full bg-blue-500 hover:bg-blue-600 hover:scale-105 transition-all duration-300 font-playfair"
                   >
                     <Link to="/checkout">Proceed to Checkout</Link>
                   </Button>
