@@ -96,7 +96,7 @@ export const HeroSection = () => {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="border-white text-gray-700  hover:bg-transparent hover:text-blue-600 hover:scale-105 transition-all duration-300 font-playfair"
+                  className="border-white text-gray-700  hover:bg-white/70 hover:text-blue-800 hover:scale-105 transition-all duration-300 font-playfair"
                 >
                   <Link to="/catering">Catering Services</Link>
                 </Button>

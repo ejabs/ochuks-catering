@@ -151,7 +151,7 @@ export const FeaturedProducts = () => {
                           {product.description}
                         </p>
                         <div className="flex items-center justify-between">
-                          <span className="text-xl font-bold text-red-400">
+                          <span className=" font-bold text-black">
                             ₦{product.price.toLocaleString()}
                           </span>
                           <Button
@@ -170,7 +170,7 @@ export const FeaturedProducts = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <button
+          {/* <button
             onClick={prevSlide}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-10"
           >
@@ -181,7 +181,7 @@ export const FeaturedProducts = () => {
             className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-10"
           >
             <ChevronRight className="h-6 w-6 text-orange-600" />
-          </button>
+          </button> */}
 
           {/* Dots Indicator */}
           <div className="flex justify-center mt-8 space-x-2">
