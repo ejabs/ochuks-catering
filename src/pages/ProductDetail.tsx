@@ -190,7 +190,7 @@ const ProductDetail = () => {
               size="lg"
               className="w-sm bg-blue-500 hover:bg-blue-600"
             >
-              Add to Cart - ${(product.price * quantity).toFixed(2)}
+              Add to Cart - ₦{(product.price * quantity).toFixed(2)}
             </Button>
           </div>
         </div>
